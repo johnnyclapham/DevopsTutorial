@@ -1,29 +1,32 @@
+package main.java;
+
 import java.util.Scanner; 
 import java.lang.Math;
 
 public class Calculator{
     public double add(double x, double y){
-        return 0.0;
+    	double result = x+y;
+        return x+y;
     }
 
     public double subtract(double x, double y){
-        return 0.0;
+        return x-y;
     }
 
     public double multiply(double x, double y){
-        return 0.0;
+        return x*y;
     }
 
     public double divide(double x, double y){
-        return 0.0;
+        return x/y;
     }
 
     public double squareRoot(double x){
-        return 0.0;
+        return Math.sqrt(x);
     }
 
     public double power(double x, int power){
-        return 0.0;
+        return Math.pow(x, power);
     }
 
     public static void main(String args[]){
@@ -58,6 +61,10 @@ public class Calculator{
                     System.out.println(calculator.squareRoot(Double.parseDouble(input[1])));
                     break;
                 case "-p":
+                    System.out.print(input[1] + " to the power of " + input[2] + " is: ");
+                    System.out.println(calculator.power(Double.parseDouble(input[1]), Integer.parseInt(input[2])));
+                    break;
+                case "t":
                     System.out.print(input[1] + " to the power of " + input[2] + " is: ");
                     System.out.println(calculator.power(Double.parseDouble(input[1]), Integer.parseInt(input[2])));
                     break;
