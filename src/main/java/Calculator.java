@@ -5,7 +5,6 @@ import java.lang.Math;
 
 public class Calculator{
     public double add(double x, double y){
-    	double result = x+y;
         return x+y;
     }
 
